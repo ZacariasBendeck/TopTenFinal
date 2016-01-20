@@ -1,0 +1,104 @@
+{
+  "Lists": [
+    {
+      "description": "This Guy knows where its at!", 
+      "id": 1, 
+      "list_type": null, 
+      "name": "Joseph Ducreax Memes", 
+      "owner_id": 1, 
+      "pic_url": "https://s-media-cache-ak0.pinimg.com/736x/eb/ce/09/ebce092a6a321fab49d9cae0b61ff07f.jpg", 
+      "published": "2016-01-20 01:59:22.712000", 
+      "updated": "2016-01-20 01:59:22.712000"
+    }, 
+    {
+      "description": "", 
+      "id": 2, 
+      "list_type": null, 
+      "name": "Best Programming Youtube Sites", 
+      "owner_id": 1, 
+      "pic_url": "https://programminghq.files.wordpress.com/2013/05/binary-code-big.jpg", 
+      "published": "2016-01-20 01:59:22.904000", 
+      "updated": "2016-01-20 01:59:22.904000"
+    }, 
+    {
+      "description": "Sooooo Cute", 
+      "id": 3, 
+      "list_type": null, 
+      "name": "Cutest Cats", 
+      "owner_id": 2, 
+      "pic_url": "https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg", 
+      "published": "2016-01-20 01:59:23.102000", 
+      "updated": "2016-01-20 01:59:23.102000"
+    }, 
+    {
+      "description": "Looove them!", 
+      "id": 4, 
+      "list_type": null, 
+      "name": "Cutest Dogs", 
+      "owner_id": 2, 
+      "pic_url": "http://cdn.sheknows.com/articles/2013/04/Puppy_2.jpg", 
+      "published": "2016-01-20 01:59:23.305000", 
+      "updated": "2016-01-20 01:59:23.305000"
+    }, 
+    {
+      "description": "They make me wanna cry!", 
+      "id": 5, 
+      "list_type": null, 
+      "name": "Love Quotes", 
+      "owner_id": null, 
+      "pic_url": "http://numtl.com/wp-content/uploads/2015/01/hug-heart.jpg", 
+      "published": "2016-01-20 01:59:23.488000", 
+      "updated": "2016-01-20 01:59:23.488000"
+    }, 
+    {
+      "description": "They make me wanna cry!", 
+      "id": 6, 
+      "list_type": null, 
+      "name": "Love Quotes", 
+      "owner_id": 2, 
+      "pic_url": "http://numtl.com/wp-content/uploads/2015/01/hug-heart.jpg", 
+      "published": "2016-01-20 01:59:23.707000", 
+      "updated": "2016-01-20 01:59:23.707000"
+    }, 
+    {
+      "description": "I lol", 
+      "id": 7, 
+      "list_type": null, 
+      "name": "Best server excuses.", 
+      "owner_id": 20, 
+      "pic_url": "http://www.bookwormroom.com/wp-content/uploads/2015/03/Hillary-did-not-have-textual-relations-with-that-server.jpg", 
+      "published": "2016-01-20 01:59:23.881000", 
+      "updated": "2016-01-20 01:59:23.881000"
+    }, 
+    {
+      "description": "Ohhh these cuties are game I'm sure, couldn't do shit right now.  But wait till 2017!! ", 
+      "id": 8, 
+      "list_type": null, 
+      "name": "Girls To Do After I am President!", 
+      "owner_id": 3, 
+      "pic_url": "http://www.mvass.com/wp-content/uploads/2012/06/ObamaGirl08.jpg", 
+      "published": "2016-01-20 01:59:24.102000", 
+      "updated": "2016-01-20 01:59:24.102000"
+    }, 
+    {
+      "description": "AI, genetics, space travel, the future of humanity!! These movies are just awesome!  ", 
+      "id": 9, 
+      "list_type": null, 
+      "name": "Best Sci Fi Movies", 
+      "owner_id": 1, 
+      "pic_url": "https://bookywook-prod.s3.amazonaws.com/uploads/post/image/50bf7b3f358d27715501ea37/sci-fi-setting.jpeg", 
+      "published": "2016-01-20 01:59:24.298000", 
+      "updated": "2016-01-20 01:59:24.298000"
+    }, 
+    {
+      "description": "", 
+      "id": 10, 
+      "list_type": null, 
+      "name": "Best Swimsuit Issue Models", 
+      "owner_id": 1, 
+      "pic_url": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/blogs/early-lead/files/2015/02/Sports_Illustrated_Swimsuit_02102-ZJWQ_image.jpg&w=1484", 
+      "published": null, 
+      "updated": null
+    }
+  ]
+}

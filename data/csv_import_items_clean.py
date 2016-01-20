@@ -42,7 +42,7 @@ for index, row in report_df.iterrows():
     print row['list_id']
 
     newItem = Items(name = row['name'], description = row['description'],
-        url = row['url'], id = row['id'], lists_id = row['list_id'],
+        url = row['url'], id = row['id'], lists_id = row['list_id'], 
         rank=row['rank'])
     session.add(newItem)
     session.commit()

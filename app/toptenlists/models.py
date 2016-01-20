@@ -49,7 +49,6 @@ class  Lists(Base):
     updated = Column(String(100))
     owner_id = Column(Integer, ForeignKey('owner.id'))
     owner = relationship(Owner)
-    item = relationship('Items', cascade = "save-update, delete")
 
     @property
     def serialize(self):

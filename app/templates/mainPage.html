@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <!-- Portfolio Grid Section -->
+    <section class="title-header" >
+        <div class="container">
+            <div class="row">
+                <div class="text-center" >
+                    <h2>CHECK OUT THE TOP TEN LIST AUTHORS!!</h2>
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+
+                    <ul>
+                    {% for message in messages %}
+                      <li> <strong> {{message}} </strong> </li>
+                          {% endfor %}
+                    </ul>
+                            {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "business-header4">
+        <div class="container"    
+            <div class="row"> 
+                <!-- start item for loop -->
+            {% set cnt = 0 %}
+            {% for i in items %}
+            {% set cnt = cnt + 1 %}
+                <div class="col-sm-3 first-section-item">
+                    <h3><a href="{{url_for('ownerLists', owner_id = i.id)}}">{{i.name}}</a></h3>
+                    <img src={{i.pic_url}} class="img-responsive" alt="">
+                
+                </div>
+                {% endfor %}
+                <!--   End item for loop -->
+
+            </div>
+        </div>
+    </section>
+
+{{ section2|safe }}
+
+{% include "footer.html" %}
+
+{% endblock %}

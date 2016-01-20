@@ -1,0 +1,44 @@
+{
+  "Lists": [
+    {
+      "description": "This Guy knows where its at!", 
+      "id": 1, 
+      "list_type": null, 
+      "name": "Joseph Ducreax Memes", 
+      "owner_id": 1, 
+      "pic_url": "https://s-media-cache-ak0.pinimg.com/736x/eb/ce/09/ebce092a6a321fab49d9cae0b61ff07f.jpg", 
+      "published": "2016-01-20 02:27:09.421000", 
+      "updated": "2016-01-20 02:27:09.421000"
+    }, 
+    {
+      "description": "", 
+      "id": 2, 
+      "list_type": null, 
+      "name": "Best Programming Youtube Sites", 
+      "owner_id": 1, 
+      "pic_url": "https://programminghq.files.wordpress.com/2013/05/binary-code-big.jpg", 
+      "published": "2016-01-20 02:27:09.632000", 
+      "updated": "2016-01-20 02:27:09.632000"
+    }, 
+    {
+      "description": "Sooooo Cute", 
+      "id": 3, 
+      "list_type": null, 
+      "name": "Cutest Cats", 
+      "owner_id": 1, 
+      "pic_url": "https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg", 
+      "published": "2016-01-20 02:27:09.820000", 
+      "updated": "2016-01-20 02:27:09.820000"
+    },
+    {
+      "description": "", 
+      "id": 4, 
+      "list_type": null, 
+      "name": "Best Swimsuit Issue Models", 
+      "owner_id": 1, 
+      "pic_url": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/blogs/early-lead/files/2015/02/Sports_Illustrated_Swimsuit_02102-ZJWQ_image.jpg&w=1484", 
+      "published": "2016-01-20 02:27:11.227000", 
+      "updated": "2016-01-20 02:27:11.227000"
+    }
+  ]
+}

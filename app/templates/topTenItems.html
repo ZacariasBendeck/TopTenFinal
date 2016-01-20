@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<!-- start flash message -->
+        <section class="title-header" >
+            <div class="container">
+                <div class="row">
+                    <div class="text-center" >
+ 		            <h2>{{tlist.owner.name}}</h2>
+                    <h1 class="first-title">{{tlist.name}}</h2>
+
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <ul>{% for message in messages %}
+                      <li> <strong> {{message}} </strong> </li>
+                          {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% endwith %}
+
+            {% if login_session.user_id == tlist.owner_id %}
+                <a href="{{url_for('createNewItem', owner_id = tlist.owner_id, tlist_id = tlist.id)}}">Create New Item</a>
+            {% endif %}
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- start TopTen secion, to be renamed 'Top Ten Section ' -->            
+    <section class="business-header" >
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+            {% set cnt = 0 %}
+            {% for item in items %}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 item-gallery">
+                    <h3>#{{item.rank}}  {{item.name}}</h3>
+                    <p>{{item.description}}</p>
+                    <img class="img-responsive item-image" src= {{item.pic_url}} alt="{{item.second_pic_url}}">
+                </p>
+                {% if login_session.user_id == item.lists.owner_id %}
+                    <a href="{{url_for('editItem', owner_id = tlist.owner_id, tlist_id = tlist.id, item_id = item.id)}}">Edit</a>
+                    <a href="{{url_for('deleteItem', owner_id = tlist.owner_id, tlist_id = tlist.id, item_id = item.id)}}">Delete</a>
+                    {% endif %}
+                </div>
+
+            {% set cnt = cnt + 1 %}
+            {% if cnt >= 4 %}
+            {% set cnt = 0 %}
+                </div>
+                </div>
+                <div class="row">
+                <div class="text-center" >
+            {% endif %}
+            {% endfor %}
+                </div>
+            </div>
+        
+            <div class = "row">
+            {% if login_session.user_id == tlist.owner_id %}
+                <div "col-xs-6 col-lg-3">
+                    <p style=:"text-center"><a href="{{url_for('deleteList', owner_id = tlist.owner_id, tlist_id = tlist.id)}}">Delete This List</a></p>
+                </div>
+            {% endif %}
+
+            </div>  
+        </div>
+        
+    </section>
+
+{% include "footer.html" %}
+{% endblock %}
+

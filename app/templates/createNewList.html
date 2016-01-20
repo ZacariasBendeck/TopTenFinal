@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <!-- Portfolio Grid Section -->
+<section class="title-header">
+    <div class="container">
+        <div class="row row-centered">
+            <div class="col-lg-4 text-center col-centered">
+                <h2 style= "color:orange; text-align:center">CREATE A NEW LIST!!</h2>
+                <form action = "{{url_for('createNewList', owner_id = owner_id)}}" method = 'POST'>
+                <div class="form-group">
+                <label for="name">List Name:</label>
+                    <input type ='text' class="input-min form-control" name='name'>
+                </div>
+                <div class="form-group">
+                <label for="name">Description: "Top Ten" ... Omit Top Ten label</label>
+                    <input type ='text' class="input-min form-control" name='description'>
+                </div>
+                <div class="form-group">
+                <label for="name">Picture URL:</label>
+                    <input type ='text' class="input-min form-control" name='pic'>
+                </div>
+
+                <div class="form-group">
+                <input type='submit' value='Create List' class = "btn btn-submitbutton">
+                <a href="{{url_for('ownerLists', owner_id = owner_id)}}">
+                    <button type="button" class="btn btn-cancelbutton">
+                    Cancel</button>
+                </a>
+                <div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</section>
+
+{% include "footer.html" %}
+
+{% endblock %}
