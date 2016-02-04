@@ -1,0 +1,29 @@
+1. Improved the Readme file
+2. Eliminated unused facebook login functions, and editOwner, which are not in use.
+3. Pep8 fixes Used http://pep8online.com/ 
+	removed spaces around parameter equals
+	changed block comments to start with '#''
+	2 spaces instead of 1 between functions
+	shortened all the lines that were too long, couldn't some lines
+	removed trailing whitespaces
+4. Changed placeholder html tag to value tag
+5. Created decorator function for authentication
+6. Delete print statements
+
+
+Fixes after second submit:
+1. EditItemFunction:
+fixed editItem form to not return bad request.  Name on html, and code were different
+2. Changed 'Templates' folder name to 'templates' this was causing errors. and causing the jinja2 error. 
+3. Changed file structure now the you run run.py, and the application is more modularized.
+	decorator functions are in decorators.py file
+4. Added a requirements.txt file
+5. Added a new decorator for authorization and wrapped the corresponding functions
+6. Changed Create New List to not require authorization. You automatically create a list to your user, you cant create lists for other users now.
+7. Implemented cascading delete to delete all items from a list when deleting a list. 
+8. Removed a lot of unnecessary queries.
+9. Shortened the code. 
+10. Made a more consistent use of casing. 
+11. Added json endpoints description
+12. Started working on dates for adding extra feed
+

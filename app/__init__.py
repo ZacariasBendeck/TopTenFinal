@@ -14,9 +14,14 @@ import httplib2
 import json
 from flask import make_response
 import requests
+from datetime import datetime
 
 from flask import g, request
+
 from app.decorators import *
+
+
+
 
 CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
@@ -62,7 +67,9 @@ def createNewList():
     if request.method == 'POST':
         newList = Lists(name=request.form['name'],
                         description=request.form['description'],
-                        pic_url=request.form['pic'], owner_id=owner_id)
+                        pic_url=request.form['pic'], owner_id=owner_id,
+                        published = datetime.today(), 
+                        updated=datetime.today())
         session.add(newList)
         session.commit()
         flash('New List Created, ' + newList.name + ' has been added!!')
@@ -85,6 +92,7 @@ def editList(owner_id, tlist_id):
             list_to_edit.description = request.form['description']
         if not (request.form['pic_url'] == ''):
             list_to_edit.pic_url = request.form['pic_url']
+        list_to_edit.updated = datetime.today()
         session.add(list_to_edit)
         session.commit()
         flash(list_to_edit.name + ' has been edited')
@@ -130,9 +138,12 @@ def createNewItem(owner_id, tlist_id):
     """ Returns a page with form for creating an item """
     tlist = session.query(Lists).filter_by(id=tlist_id).one()
     if request.method == 'POST':
-        newItem = Items(name=request.form['name'],
+        newItem = Items(name=request.form['name'], 
                         description=request.form['description'],
-                        url=request.form['url'], lists_id=tlist_id)
+                        pic_url=request.form['pic_url'], lists_id=tlist_id,
+                        rank=request.form['rank'], 
+                        published=datetime.today(),
+                        updated=datetime.today())
         session.add(newItem)
         session.commit()
         flash('New Item Created, ' + newItem.name + ' has been added!!')
@@ -156,11 +167,13 @@ def editItem(owner_id, tlist_id, item_id):
         if not (request.form['description'] == ''):
             item_to_edit.description = request.form['description']
         if not (request.form['pic_url'] == ''):
+            print request.form['pic_url']
             item_to_edit.pic_url = request.form['pic_url']
         if not (request.form['second_pic_url'] == ''):
-            item_to_edit.pic_url = request.form['second_pic_url']
+            item_to_edit.second_pic_url = request.form['second_pic_url']
         if not (request.form['rank'] == ''):
             item_to_edit.rank = request.form['rank']
+        item_to_edit.updated = datetime.today()
         session.add(item_to_edit)
         session.commit()
         flash(item_to_edit.name + ' has been edited')

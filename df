@@ -1,0 +1,85 @@
+[33mcommit 7f1805649166845fe0d11676e651e2f76bdaa1bd[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Wed Jan 20 03:11:50 2016 -0600
+
+    Everything is working! Ready to turn in.
+    I should get meets expectations.
+    This commit includes database populator.
+    From 3 json files you can populate data and make changes to the
+    database easily.
+    
+    in the Fixes after submit.txt you will find the latest changes.
+    
+    Things to do:
+    Now we can add created and updated functions when commiting changes to db.
+    With this we should be able to implement api endpoints exceeds. Look into
+    it.
+    
+    This and csrf tokens should get me to exceeds expectations.
+
+[33mcommit 45595fef5a6cfca04860e0236f7c24dd17e4814d[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Mon Jan 18 00:13:02 2016 -0600
+
+    Everything is working awesomely.
+    
+    1-Fixed all forms to be boostrap css, and added some other css classes
+    2-cant logout now, seems like either google is down or something
+    
+    Should be able to turn in this week!
+
+[33mcommit dce1ce8221fd5fb902650a901d7eb5ab535db6c9[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Fri Oct 2 04:17:09 2015 -0600
+
+    Commit name:  Before redoing databases!!
+    
+    1. Added more json endings and exported all of my data to data folder in json
+    format.
+    2. new python script getjasonback.py in order to rebuild my database.
+    
+    What I will do now:
+    1. Add a user table, to add data from logged in users.
+    2. Add permision code so not all pages will be visible to all users, and
+    some functions will be disabled for some users too.
+    3.  Eventually change the base.html file to show the logged in user.
+
+[33mcommit 35b296a614b306a3ddf88192fae5f68dd6dd8564[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Thu Oct 1 08:33:18 2015 -0600
+
+    Commiting all of the files theis time.  added the html files etc...
+    
+    State:  Everything compiles, webpage runs well:
+    What is not working:
+    1. Facebook login and Google Login working, but need to work on adding the
+    users to db, and adding permisions to functions.
+    login page does not redirect to main page either.
+    2. Ranking system is working topTenlists.
+    3. On unranked section of toptenlist, we are showing an icon that shouldnt
+    be shown, and the hover is not working either on these pics.
+    4.  Added base.html template, and started remaking pages so they inherit
+    from this page. about 3 pages have been remade with this, createitem,
+    toptenlist, edititem, deleteitem.
+    Need to remake all other pages so they inherit from this page too.
+    4. Navbar too thick, make leaner
+    5. Login portrait needs to be worked on.
+
+[33mcommit b14b33ecfde4e88f0e7d914d4292df9a2b0ced27[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Tue Sep 29 01:12:40 2015 -0600
+
+    ommitting before starting to work on oauthorizatio!!
+
+[33mcommit aaac2b6fd0bcd1b3c0e0e8d8760837dda3621f73[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Mon Sep 28 02:08:55 2015 -0600
+
+       all the lists are working, program is working with loops.
+       Now we will add the database connections!!!!
+
+[33mcommit 878e0627887829bedbec6dddc65d20e858243445[m
+Author: ZacariasBendeck <zbendeck@gmail.com>
+Date:   Fri Sep 25 22:31:43 2015 -0600
+
+    First Commit, Finished all the routings!!ÚÚ
